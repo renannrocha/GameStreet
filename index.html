@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OFP</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="css/estilo.css">
@@ -12,55 +12,126 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
   </head>
 </head>
-<body onresize="mudouTamanho()">
-    <header>
-        <img src="img/logo.jpg" alt="logo"><input type="search" size=40px name="pesquisa" placeholder="pesquise aqui"></h1>
-        <!--Barra de Navegação-->
-        <i id="burguer" class="material-icons" onclick="clickMenu()">menu</i>
-        <menu id="itens">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre Nós</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Entrar</a></li>
-                <li><a href="#">Cadastrar</a></li>
+<body onresize="mudouTamanho()"> 
+    <!--Altereação feita pelo Leonardo-->
+    <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid">
+            <img src="img/logo.jpg"  alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sobre Nós</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Entrar</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  News
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
             </ul>
-        </menu>
-    </header>
-    <main>
-        <!--Artigo-->
-        <article>
-            <h2>Os Filhos da Python</h2>
+            
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="geral">
+      <!--cards -->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/logo.png" style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/logo.png" style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/logo.png" style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/logo.png" style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+
+      <br><br><br>
+      <!--Alteração feito por leonardo-->
+      <div class="container">
+        <h1>OS FILHOS DE PYTHON</h1>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem fuga, voluptatum quos consectetur perferendis, saepe iure, esse eaque maxime rerum eius nulla maiores a consequuntur dolore inventore dolor? Perferendis!</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam atque deserunt repellendus quo ducimus aperiam, eius dolor quas modi rem, dolore ad facere eveniet, animi numquam ut vitae nemo libero.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, commodi tempore. Aliquam nesciunt alias libero expedita, rerum ratione impedit illo veritatis possimus blanditiis officia modi sequi corrupti. Ratione, assumenda natus.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab deleniti doloremque odit dicta, esse laboriosam deserunt reprehenderit aspernatur quis autem? Delectus iste labore excepturi expedita quibusdam eum perferendis doloribus nihil.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae inventore ad veritatis! Expedita ipsam, dolorum quasi nostrum tempore excepturi rem optio veniam pariatur necessitatibus, possimus amet exercitationem obcaecati debitis odio?</p>
-        </article>
-        <div class="row">
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                    <img src="img/logo.png" style="width: 180px;">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Mais informações</a>
-                </div>
-            </div>
-            </div>
-            <div class="col-sm-6">
-              <div class="card">
-                <div class="card-body">
-                    <img src="img/logo.png" style="width: 180px;">
-                    <h5 class="card-title">Special title treatment</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Mais informações</a>
-                </div>
-              </div>
-            </div>
-          </div>
+      </div>
+    
+    </div>
 
-    </main>
+    <!-- Rodapé-->
+    <footer class="bg-dark text-light">
+      <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="nav flex-column">
+            <img src="img/logo.jpg" alt="logo" style="width: 100px; margin:50px;">
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h2>Sobre nós</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem fuga, voluptatum quos consectetur perferendis, saepe iure, esse eaque maxime rerum eius nulla maiores a consequuntur dolore inventore dolor? Perferendis!</p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Redes Sociais</h2>
+        </div>
+      </div>
+      </div>
+      <div class="text-center" style="background-color: #333; padding: 20px;" >
+        &copy 2022 OS FILHOS DE PYTHON
+      </div>
+    </footer>
     <script>
 
         function mudouTamanho(){
