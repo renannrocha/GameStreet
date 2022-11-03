@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="css/media-query.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+  </head>
+</head>
+
+<body onresize="mudouTamanho()"> 
+    <!--Barra de Navegação-->
+    <nav class="navbar navbar-expand-lg bg-dark text-light">
+        <div class="container-fluid">
+            <img src="img/logo.jpg"  alt="logo">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Entrar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="cadastro2.html">Cadastrar</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  News
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="https://www.xbox.com/pt-BR">Xbox</a></li>
+                    <li><a class="dropdown-item" href="https://www.playstation.com/pt-br/">Playstation</a></li>
+                    <li><a class="dropdown-item" href="https://www.nintendo.com/pt-br/">Nintendo</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="news.html">Jogos</a></li>
+                </ul>
+              </li> 
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <div class="geral">
+      <!--cards -->
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/resident.webp" style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/godofwar.webp " style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/cod.jpg" style="width: 100%;">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-3">
+          <div class="card">
+            <div class="card-body">
+                <img src="img/fifa.jpg" style="width: 100%; ">
+                <h5 class="card-title">Special title treatment</h5>
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Mais informações</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Rodapé-->
+    <footer class="bg-dark text-light">
+      <div class="container-fluid py-3">
+      <div class="row">
+        <div class="col-sm-4">
+          <ul class="nav flex-column">
+            <img src="img/logo.jpg" alt="logo" style="width: 100px; margin:50px;">
+          </ul>
+        </div>
+        <div class="col-sm-4">
+          <h2>Sobre nós</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia quidem fuga, voluptatum quos consectetur perferendis, saepe iure, esse eaque maxime rerum eius nulla maiores a consequuntur dolore inventore dolor? Perferendis!</p>
+        </div>
+        <div class="col-sm-4">
+          <h2>Redes Sociaiss</h2>
+        </div>
+      </div>
+      </div>
+      <div class="text-center" style="background-color: #333; padding: 20px;" >
+        &copy 2022 OS FILHOS DE PYTHON
+      </div>
+    </footer>
+
+    <!-- Java Script-->
+    <script>
+
+        function mudouTamanho(){
+            if(window.innerWidth >= 768){
+                itens.style.display = 'block'
+            }else{
+                itens.style.display = 'none'
+            }
+        }
+
+        function clickMenu(){
+            if(itens.style.display == 'block'){
+                itens.style.display = 'none'
+            }else{
+                itens.style.display = 'block'
+            }
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+</body>
+</html>
