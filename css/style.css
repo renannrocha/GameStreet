@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+	padding: 0;
+	background-color: #0e6cc4;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}
+/* avise em caso de auteração */
+/* inicio configuração da nav-bar */
+
+button {
+    border: 0;
+    padding: 0;
+    font-family: inherit;
+    background: transparent;
+    color: inherit;
+    cursor: pointer;
+}
+
+.navbar {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 64px;
+    background: #19191c;
+    color: #f9f9f9;
+    font-family: "Poppins";
+    box-sizing: border-box;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar {
+    justify-content: space-between;
+    padding: 0 0 0 16px;
+    }
+}
+
+.navbar-overlay {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+body.open .navbar-overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-overlay {
+    display: none;
+    }
+}
+
+.navbar-burger {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 64px;
+    height: 64px;
+    padding: 0;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-burger {
+    display: none;
+    }
+}
+
+.navbar-title {
+    margin: 0;
+    font-size: 16px;
+}
+
+.navbar-menu {
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    left: 0;
+    translate: -100% 0;
+    width: 270px;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    background: #000000;
+    visibility: hidden;
+    transition: translate 0.3s;
+}
+
+.navbar-menu button a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.navbar-menu button a:hover{
+    text-decoration: none;
+    color:#1865b1;
+}
+
+body.open .navbar-menu {
+    translate: 0 0;
+    visibility: visible;
+}
+
+@media only screen and (min-width: 600px) {
+    .navbar-menu {
+        position: static;
+        translate: 0 0;
+        width: auto;
+        background: transparent;
+        flex-direction: row;
+        visibility: visible;
+    }
+}
+
+.navbar-menu > button {
+    color: rgba(255, 255, 255, 0.5);
+    background: transparent;
+    padding: 0 8px;
+}
+
+.navbar-menu > button.active {
+    color: inherit;
+}
+
+/* fim configuração da nav-bar */
+
+/* configuração do backgroud(fundo) waves (não alterar!!) */
+
+/*waves****************************/
+
+
+.box {
+	position: fixed;
+	top: 0;
+	transform: rotate(80deg);
+	left: 0;
+}
+
+.wave {
+	position: fixed;
+	top: 0;
+	left: 0;
+    opacity: .4;
+    position: absolute;
+    top: 3%;
+    left: 10%;
+    background: #0af;
+    width: 1500px;
+    height: 1300px;
+    margin-left: -150px;
+    margin-top: -250px;
+    transform-origin: 50% 48%;
+    border-radius: 43%;
+    animation: drift 7000ms infinite linear;
+}
+
+.wave.-three {
+    animation: drift 7500ms infinite linear;
+	position: fixed;
+	background-color: #77daff;
+}
+
+.wave.-two {
+    animation: drift 3000ms infinite linear;
+    opacity: .1;
+    background: black;
+	position: fixed;
+}
+
+.box:after {
+    content: '';
+    display: block;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 11;
+    transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+    from { transform: rotate(0deg); }
+    from { transform: rotate(360deg); }
+}
+
+/*LOADING SPACE*/
+
+.contain {
+	animation-delay: 2s;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    background: #25a7d7;
+    background: -webkit-linear-gradient(#25a7d7, #2962FF);
+    background: linear-gradient(#25a7d7, #25a7d7);
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+}
+
+/*Animation*/
+.icon:nth-child(2) img {-webkit-animation-delay: 0.1s;animation-delay: 0.1s}
+.icon:nth-child(3) img {-webkit-animation-delay: 0.2s;animation-delay: 0.2s}
+.icon:nth-child(4) img {-webkit-animation-delay: 0.3s;animation-delay: 0.3s}
+
+.icon img {
+    -webkit-animation: anim 1s ease infinite;
+    animation: anim 1s ease infinite;
+    -webkit-transform: scale(0,0) rotateZ(180deg);
+    transform: scale(0,0) rotateZ(180deg);
+}
+
+@-webkit-keyframes anim{
+        0% {
+        -webkit-transform: scale(0,0) rotateZ(-90deg);
+        transform: scale(0,0) rotateZ(-90deg);opacity:0
+    }
+    30% {
+        -webkit-transform: scale(1,1) rotateZ(0deg);
+        transform: scale(1,1) rotateZ(0deg);opacity:1
+    }
+    50% {
+        -webkit-transform: scale(1,1) rotateZ(0deg);
+        transform: scale(1,1) rotateZ(0deg);opacity:1
+    }
+    80% {
+        -webkit-transform: scale(0,0) rotateZ(90deg);
+        transform: scale(0,0) rotateZ(90deg);opacity:0
+    }
+}
+
+@keyframes anim{
+    0% {
+        -webkit-transform: scale(0,0) rotateZ(-90deg);
+        transform: scale(0,0) rotateZ(-90deg);opacity:0
+    }
+    30% {
+        -webkit-transform: scale(1,1) rotateZ(0deg);transform: scale(1,1) rotateZ(0deg);opacity:1
+    }
+    50% {
+        -webkit-transform: scale(1,1) rotateZ(0deg);
+        transform: scale(1,1) rotateZ(0deg);opacity:1
+    }
+    80% {
+        -webkit-transform: scale(0,0) rotateZ(90deg);
+        transform: scale(0,0) rotateZ(90deg);opacity:0
+    }
+}
+
+/* fim configuração do backgroud(fundo) waves */
