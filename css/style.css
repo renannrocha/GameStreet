@@ -3,11 +3,9 @@
 }
 
 body {
+	background-color: #0e6cc4;
     margin: 0;
 	padding: 0;
-	background-color: #0e6cc4;
-	overflow-x:hidden;
-	overflow-y:hidden;
 }
 /* avise em caso de auteração */
 /* inicio configuração da nav-bar */
