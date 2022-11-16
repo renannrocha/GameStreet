@@ -17,13 +17,13 @@
 .carousel {
     margin-bottom: 4rem;
 }
-/* Since positioning the image, we need to help out the caption */
+/* Desde o posicionamento da imagem, precisamos ajudar a legenda */
     .carousel-caption {
     bottom: 3rem;
     z-index: 10;
 }
 
-/* Declare heights because of positioning of img element */
+/* Declarar alturas devido ao posicionamento do elemento img */
 .carousel-item {
     height: 32rem;
 }
@@ -32,7 +32,7 @@
 /* MARKETING CONTENT
 -------------------------------------------------- */
 
-/* Center align the text within the three columns below the carousel */
+/* Alinhar o texto no centro dentro das três colunas abaixo do carrossel */
 .marketing .col-lg-4 {
     margin-bottom: 1.5rem;
     text-align: center;
@@ -45,7 +45,7 @@
 /* rtl:end:ignore */
 
 
-/* Featurettes
+/* Destaques
 ------------------------- */
 
 .featurette-divider {
@@ -64,7 +64,7 @@ margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 -------------------------------------------------- */
 
 @media (min-width: 40em) {
-    /* Bump up size of carousel content */
+    /* Aumentar o tamanho do conteúdo do carrossel */
     .carousel-caption p {
         margin-bottom: 1.25rem;
         font-size: 1.25rem;
