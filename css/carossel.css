@@ -81,5 +81,54 @@ margin: 5rem 0; /* Space out the Bootstrap <hr> more */
         margin-top: 7rem;
     }
 }
+/* configurações que eu fiz pra responsividade */
+
+.bd-placeholder-img{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    display: flex
+    ;
+    fill:#777;
+    justify-content: center;
+}
+
+@media(min-aspect-ratio : 16/9){
+    .bd-placeholder-img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio : 16/9){
+    .bd-placeholder-img{
+        width: auto;
+        height: 100%;
+    }
+}
+
+.main-carrosel{
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    justify-content: center;
+}
+
+@media(min-aspect-ratio : 16/9){
+    .main-carrosel{
+        width: 100%;
+        height: auto;
+    }
+}
+@media(max-aspect-ratio : 16/9){
+    .main-carrosel{
+        width: auto;
+        height: 100%;
+    }
+}
+
+
+
+
 
 /* fim CONFIGURAÇÃO CAROSSEL DA HOME (não alterar) */
+

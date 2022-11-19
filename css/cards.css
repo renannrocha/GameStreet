@@ -48,3 +48,13 @@
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
 }
+
+.card-body  h4 a {
+    text-decoration: none;
+    color: #0f0f0f;
+}
+
+.card-body  h4 a:hover{
+    text-decoration: none;
+    color: #0230fc;
+}

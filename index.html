@@ -2,21 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Game Street - A maior plataforma de games no Brasil</title>
-    <link rel="website icon" href="img/joystick menor.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="website icon" href="img/logoIcons/logoIcon1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
     <!--link botstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="css/carossel.css">
     <!--link botstrap-->
-    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/media-query.css">
+    <link rel="stylesheet" href="css/cards.css">
 </head>
 <body>
+
+<!--inicio do backgroud waves-->
+<div class='box'>
+    <div class='wave -one'></div>
+    <div class='wave -two'></div>
+    <div class='wave -three'></div>
+</div>
+<!--fim do backgroud waves-->
 
 <!-- inicio da area de navegação-->
     <section>
@@ -25,7 +35,7 @@
             <button type="button" class="navbar-burger" onclick="toggleMenuOpen()">
             <span class="material-icons">menu</span>
             </button>
-            <h1 class="navbar-title"><a href="index.html"><img src="img/logo px 32.png" alt="logo"></a></h1>
+            <h1 class="navbar-title"><a href="index.html"><img src="img/logoIcons/logo3.png" alt="logo"></a></h1><hr>
             <nav class="navbar-menu">
                 <button type="button"><a href="news.html">News</a></button>
                 <button type="button"><a href="listas.html">Listas</a></button>
@@ -50,30 +60,30 @@
                             <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active"><img src="img/gameawards2022post.png" alt="" rect width="100%" height="100%" fill="#777">
+                            <div class="carousel-item active"><img class="bd-placeholder-img" src="img/carroselimg/gameawards2022post.png" alt=""  preserveAspectRatio="xMidYMid slice" >
                                 <div class="container">
                                     <div class="carousel-caption text-start">
                                         <h1>The Game Awards: Confira todos os indicados de 2022</h1>
                                         <p>Lista de melhores do ano inclui Elden Ring, God of War Ragnarök e mais</p>
-                                        <p><a class="btn btn-lg btn-primary" href="noticia001.html">Saiba mais</a></p>
+                                        <p><a class="btn btn-lg btn-primary" href="https://www.theenemy.com.br/pc/tga-2022-indicados">Saiba mais</a></p>
                                     </div>
-                                </div>
+                                </div>    
                             </div>
-                                <div class="carousel-item"><svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                                <div class="carousel-item"><img class="bd-placeholder-img" src="img/carroselimg/sonicFslide.png" alt=""  preserveAspectRatio="xMidYMid slice" >
                                     <div class="container">
                                         <div class="carousel-caption">
-                                            <h1>Another example headline.</h1>
-                                            <p>Some representative placeholder content for the second slide of the carousel.</p>
-                                            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                                            <h1 class="titulo1">Sonic Frontiers bate recorde da franquia no Steam</h1>
+                                            <p>Pico de jogadores simultâneos no PC corresponde a novo ápice da série na plataforma</p>
+                                            <p><a class="btn btn-lg btn-primary" href="https://www.theenemy.com.br/pc/sonic-frontiers-recorde-franquia-steam">Saiba mais</a></p>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="carousel-item"><svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
+                                <div class="carousel-item"><img class="bd-placeholder-img" src="img/carroselimg/thewslide.png" alt=""   preserveAspectRatio="xMidYMid slice" >
                                     <div class="container">
                                         <div class="carousel-caption text-end">
-                                            <h1>One more for good measure.</h1>
-                                            <p>Some representative placeholder content for the third slide of this carousel.</p>
-                                            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                                            <h1>The Witcher 3 chega para PS5 e Xbox Series em dezembro</h1>
+                                            <p>Jogo da CD Projekt terá sua versão para consoles da nova geração</p>
+                                            <p><a class="btn btn-lg btn-primary" href="https://www.theenemy.com.br/playstation/the-witcher-3-ps5-xbox-series">Saiba mais</a></p>
                                         </div>
                                     </div>
                                 </div>
@@ -93,57 +103,46 @@
 <!--fim botstrap carrosel-->
 
 <!--inicio cards botstrap-->
-            <div class="album py-5 bg-light">
-                <div class="container">
-                    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                        <!--noticia1-->
-                        <div class="col">
-                            <div class="card shadow-sm"><img src="img/godofwarpost.png" alt="godofwar">
-                                <div class="card-body">
-                                    <h4 class="card-text">seria God of War Ragnarok game do ano ?</h4>
-                                    <p class="card-text">entenda</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
-                                        </div>
-                                        <small class="text-muted">9m de leitura</small>
-                                    </div>
+            <div class="container">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <!--noticia1-->
+                    <div class="col">
+                        <div class="card shadow-sm"><img src="img/cards/gta5_card.png" alt="gta5cardpost">
+                            <div class="card-body">
+                                <h4 class="card-text"><a href="https://www.theenemy.com.br/playstation/jogos-playstation-promocao-nov-ter-22">Jogos de PS4 e PS5 com descontos de até 90%</a></h4>
+                                <p class="card-text">Lista inclui Monster Hunter: World, GTA 5 e Star Wars</p><br>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted"><b>1 min de leitura</b></small>
                                 </div>
                             </div>
                         </div>
-                        <!--noticia2-->
-                        <div class="col">
-                            <div class="card shadow-sm"><img src="img/fifapost.png" alt="fifa">
-                                <div class="card-body">
-                                    <h4 class="card-text">a EA não tem mais criatividade</h4>
-                                    <p class="card-text">reviwers falam que o jogo e a mesma coisa dos anos anteriores</p>                        
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
+                    </div>
+                    <!--noticia2-->
+                    <div class="col">
+                        <div class="card shadow-sm"><img src="img/cards/csgosimple_card.png" alt="csgo_notice">
+                            <div class="card-body">
+                                <h4 class="card-text"><a href="https://www.theenemy.com.br/esports/csgo-s1mple-doa-100-mil-dolares-para-ajudar-a-ucrania">CS:GO: S1mple doa 100 mil Dólares para ajudar a Ucrânia</a></h4>
+                                <p class="card-text">A doação inicia uma importante parceria entre a Natus Vincere e a UNITED24</p>                        
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted"><b>2 min de leitura</b></small>
                                 </div>
                             </div>
                         </div>
-                        <!--noticia3-->
-                        <div class="col">
-                            <div class="card shadow-sm"><img src="img/re4remakepost.png" alt="re4remakepost">
-                                <div class="card-body">
-                                    <h4 class="card-text">O Resident Evil 4 Remake , o mais aguardado</h4>
-                                    <p class="card-text">muitas expectativas no remake da capcom</p>
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <div class="btn-group">
-                                            <button type="button" class="btn btn-sm btn-outline-secondary">Saiba mais</button>
-                                        </div>
-                                        <small class="text-muted">9 mins</small>
-                                    </div>
+                    </div>
+                    <!--noticia3-->
+                    <div class="col">
+                        <div class="card shadow-sm"><img src="img/cards/pingpreso_card.png" alt="criador_do_sonic_preso">
+                            <div class="card-body">
+                                <h4 class="card-text"><a href="https://www.theenemy.com.br/pc/ping-criador-sonic-preso">PING: Criador de Sonic é preso e mais; veja</a></h4>
+                                <p class="card-text">Veja informações sobre Splinter Cell Remake, Tekken 8 e mais</p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <small class="text-muted"><b>2 min de leitura</b></small>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </div><br><br>
 <!--fim dos cards botstrap-->
         </main>
     </section>
@@ -153,13 +152,14 @@
     <section class="footer">
         <footer class="text-muted py-5">
             <div class="container">
-                <h2 class="float-end mb-1"><a href="#">Back to top</a></h2>
-                <h2 class="mb-1"><img src="img/logo px 32.png" alt="logo"> Game Street&copy;</h2>
-                <h2 class="mb-0"></h2>
+                <h2 class="float-end mb-1"><a href="#">cadastrar</a></h2>
+                <h2 class="mb-1"><img src="img/logoIcons/logo2.png" alt="logo">&copy;</h2>
+                <h2 class="mb-0">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officia necessitatibus sapiente facere totam repellat qui quasi? Perspiciatis quae labore iste numquam pariatur recusandae? Quam suscipit ab deleniti dolores dolor explicabo.</h2>
             </div>
         </footer>
     </section>
 <!--fim do footer-->
+
 <!--scripts Bootstrap-->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
