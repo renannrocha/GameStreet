@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+article{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*Cards*/
+.cardprincipal{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.cardprincipal > .card{
+    position:  relative;
+    width: 280px;
+    height: 400px;
+    margin: 30px;
+    box-shadow: 20px 20px 50px rgba(0, 0, 0, 0.5);
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-left: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.cardprincipal > .card > .content{
+    padding: 20px;
+    text-align: center;
+    transform: translateY(100px);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.cardprincipal > .card:hover > .content{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+.cardprincipal > .card > .content > h2{
+    top: -80px;
+    right: 20px;
+    font-size: 3em;
+    pointer-events: none;
+}
+
+.cardprincipal > .card > .content > h3{
+    font-size: 1.8em;
+    z-index: 1;
+}
+
+.cardprincipal > .card > .content > p{
+    font-size: 1em;
+    font-weight: 300;
+}
+
+.cardprincipal > .card > .content > a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: black;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 20px;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
