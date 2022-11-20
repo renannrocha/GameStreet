@@ -213,6 +213,10 @@ body {
     position:relative;
 }
 
+.float-end a{
+    text-decoration: none;
+    color: RGB(198, 198, 197);
+}
 
 /* configuração relogio index */
 #relogio{
@@ -230,3 +234,18 @@ body {
     margin-top: 10px;
 }
 
+/* configuração dos cards em lista */
+.cards-list{
+    max-width: 900px;
+}
+
+.img-fundo{
+    height: 100%;
+    width: 100%;
+    fill: #777;
+}
+
+.container-block-identfication .title-page{
+    color: rgba(255, 255, 255, 0.973); 
+    text-align: end;
+}
