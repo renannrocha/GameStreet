@@ -1,14 +1,17 @@
+/* avise em caso de auteração */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
 * {
     box-sizing: border-box;
 }
 
 body {
-	background: #fff;
+	background:#fff;
     margin: 0;
 	padding: 0;
 }
-/* avise em caso de auteração */
-/* inicio configuração da nav-bar */
+
+/* inicio configuração da nav-bar  (não auterar) */
 
 
 @media (max-width: 991.98px) {
@@ -59,7 +62,7 @@ body {
 }
 /* fim configuração da nav-bar */
 
-/* configuração do backgroud(fundo) waves (não alterar!!) */
+/* configuração (fundo) do backgroud waves cadastro (não alterar!!) */
 
 /*waves****************************/
 
@@ -202,6 +205,7 @@ body {
 
 /* fim configuração do backgroud(fundo) waves */
 
+
 /* configuração do footer */
 
 .footer{
@@ -209,4 +213,20 @@ body {
     position:relative;
 }
 
+
+/* configuração relogio index */
+#relogio{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+    color: rgba(198, 198, 197, 0.09);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 7px;
+    transform: translate(-50%, -50%);
+    margin-left: 35%;
+    margin-bottom: 30%;
+    margin-top: 10px;
+}
 
