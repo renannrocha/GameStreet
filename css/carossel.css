@@ -1,134 +1,143 @@
-/* inicio CONFIGURAÇÃO CAROSSEL DA HOME (não alterar) */
-/* GLOBAL STYLES
--------------------------------------------------- */
-/* Padding abaixo do rodapé e corpo de texto mais claro */
+@charset "UTF-8";
+/*
+Typical Device Breakpoints
+--------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: 768px até 992px
+Desktop: 992px até 1200px
+Grandes telas: acima de 1200px
+*/
 
-.main-carrosel{
-    padding-top: 2rem;
-    padding-bottom: 1rem;
-    color: #5a5a5a;
-}
+@media screen and (min-width: 600px) {
+    /* inicio CONFIGURAÇÃO CAROSSEL DA HOME (não alterar) */
+    /* GLOBAL STYLES
+    -------------------------------------------------- */
+    /* Padding abaixo do rodapé e corpo de texto mais claro */
 
-
-/* CUSTOMIZE THE CAROUSEL
--------------------------------------------------- */
-
-/* Classe base carrossel */
-.carousel {
-    margin-bottom: 4rem;
-}
-/* Desde o posicionamento da imagem, precisamos ajudar a legenda */
-    .carousel-caption {
-    bottom: 3rem;
-    z-index: 10;
-}
-
-/* Declarar alturas devido ao posicionamento do elemento img */
-.carousel-item {
-    height: 32rem;
-}
-
-
-/* MARKETING CONTENT
--------------------------------------------------- */
-
-/* Alinhar o texto no centro dentro das três colunas abaixo do carrossel */
-.marketing .col-lg-4 {
-    margin-bottom: 1.5rem;
-    text-align: center;
-}
-/* rtl:begin:ignore */
-.marketing .col-lg-4 p {
-    margin-right: .75rem;
-    margin-left: .75rem;
-}
-/* rtl:end:ignore */
-
-
-/* Destaques
-------------------------- */
-
-.featurette-divider {
-margin: 5rem 0; /* Space out the Bootstrap <hr> more */
-}
-
-/* Thin out the marketing headings */
-/* rtl:begin:remove */
-.featurette-heading {
-    letter-spacing: -.05rem;
-}
-
-/* rtl:end:remove */
-
-/* RESPONSIVE CSS
--------------------------------------------------- */
-
-@media (min-width: 40em) {
-    /* Aumentar o tamanho do conteúdo do carrossel */
-    .carousel-caption p {
-        margin-bottom: 1.25rem;
-        font-size: 1.25rem;
-        line-height: 1.4;
+    .main-carrosel{
+        padding-top: 2rem;
+        padding-bottom: 1rem;
+        color: #5a5a5a;
     }
 
+
+    /* CUSTOMIZE THE CAROUSEL
+    -------------------------------------------------- */
+
+    /* Classe base carrossel */
+    .carousel {
+        margin-bottom: 4rem;
+    }
+    /* Desde o posicionamento da imagem, precisamos ajudar a legenda */
+        .carousel-caption {
+        bottom: 3rem;
+        z-index: 10;
+    }
+
+    /* Declarar alturas devido ao posicionamento do elemento img */
+    .carousel-item {
+        height: 32rem;
+    }
+
+
+    /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Alinhar o texto no centro dentro das três colunas abaixo do carrossel */
+    .marketing .col-lg-4 {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    /* rtl:begin:ignore */
+    .marketing .col-lg-4 p {
+        margin-right: .75rem;
+        margin-left: .75rem;
+    }
+    /* rtl:end:ignore */
+
+
+    /* Destaques
+    ------------------------- */
+
+    .featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+    }
+
+    /* Thin out the marketing headings */
+    /* rtl:begin:remove */
     .featurette-heading {
-        font-size: 50px;
+        letter-spacing: -.05rem;
     }
-}
 
-@media (min-width: 62em) {
-    .featurette-heading {
-        margin-top: 7rem;
+    /* rtl:end:remove */
+
+    /* RESPONSIVE CSS
+    -------------------------------------------------- */
+
+    @media (min-width: 40em) {
+        /* Aumentar o tamanho do conteúdo do carrossel */
+        .carousel-caption p {
+            margin-bottom: 1.25rem;
+            font-size: 1.25rem;
+            line-height: 1.4;
+        }
+
+        .featurette-heading {
+            font-size: 50px;
+        }
     }
-}
-/* configurações que eu fiz pra responsividade */
 
-.bd-placeholder-img{
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    display: flex
-    ;
-    fill:#777;
-    justify-content: center;
-}
+    @media (min-width: 62em) {
+        .featurette-heading {
+            margin-top: 7rem;
+        }
+    }
+    /* configurações que eu fiz pra responsividade */
 
-@media(min-aspect-ratio : 16/9){
     .bd-placeholder-img{
         width: 100%;
-        height: auto;
+        height: 100vh;
+        z-index: -1;
+        display: flex
+        ;
+        fill:#777;
+        justify-content: center;
     }
-}
-@media(max-aspect-ratio : 16/9){
-    .bd-placeholder-img{
-        width: auto;
-        height: 100%;
+
+    @media(min-aspect-ratio : 16/9){
+        .bd-placeholder-img{
+            width: 100%;
+            height: auto;
+        }
     }
-}
+    @media(max-aspect-ratio : 16/9){
+        .bd-placeholder-img{
+            width: auto;
+            height: 100%;
+        }
+    }
 
-.main-carrosel{
-    width: 100%;
-    height: 100vh;
-    z-index: -1;
-    justify-content: center;
-}
-
-@media(min-aspect-ratio : 16/9){
     .main-carrosel{
         width: 100%;
-        height: auto;
+        height: 100vh;
+        z-index: -1;
+        justify-content: center;
+    }
+
+    @media(min-aspect-ratio : 16/9){
+        .main-carrosel{
+            width: 100%;
+            height: auto;
+        }
+    }
+    @media(max-aspect-ratio : 16/9){
+        .main-carrosel{
+            width: auto;
+            height: 100%;
+        }
     }
 }
-@media(max-aspect-ratio : 16/9){
-    .main-carrosel{
-        width: auto;
-        height: 100%;
-    }
-}
-
-
-
-
 
 /* fim CONFIGURAÇÃO CAROSSEL DA HOME (não alterar) */
 
