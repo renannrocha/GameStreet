@@ -8,7 +8,6 @@ $(document).ready(function(){
             email:{
                 email: true,
                 required: true
-               
             },
             senha:{
                 minlength:3,
