@@ -218,22 +218,6 @@ body {
     color: RGB(198, 198, 197);
 }
 
-/* configuração relogio index */
-#relogio{
-    position: absolute;
-    top: 40%;
-    left: 10%;
-    color: rgba(198, 198, 197, 0.09);
-    font-family: 'Orbitron', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    letter-spacing: 7px;
-    transform: translate(-50%, -50%);
-    margin-left: 35%;
-    margin-bottom: 30%;
-    margin-top: 10px;
-}
-
 /* configuração dos cards em lista */
 .cards-list{
     max-width: 900px;
@@ -248,4 +232,8 @@ body {
 .container-block-identfication .title-page{
     color: rgba(255, 255, 255, 0.973); 
     text-align: end;
+}
+
+.copyconpany{
+    align-items: center;
 }

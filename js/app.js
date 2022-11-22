@@ -1,1 +1,0 @@
-let userController = new UserController()

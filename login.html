@@ -13,36 +13,29 @@
 <body class="my-login-page">
 
 <!-- inicio da area de navegação-->
-	<section>
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
-			<div class="container-fluid">
-				<a class="navbar-brand" href="index.html"><img src="img/logoIcons/logo2.png" alt="logo"></a></h1></a>
-				<button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-				</button>
-				<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
-					<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-						<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/logoIcons/user4.png" alt="user"></a>
-							<ul class="dropdown-menu">
-								<li><a class="dropdown-item" href="register.html">Cadastre-se</a></li>
-								<li><a class="dropdown-item" href="cadastro2.html">Login</a></li>
-							</ul>
-						</li>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="news.html">News</a></li>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="listas.html">Listas</a></li>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="reviews.html">Reviews</a></li>
-						<li class="nav-item"><a class="nav-link" aria-current="page" href="esports.html">eSports</a></li>
-						<div id="relogio">relogio</div>
-					</ul>
-					<form class="d-flex" role="search">
-						<input class="form-control me-2" type="search" placeholder="o que deseja" aria-label="Search">
-						<button class="btn" type="submit"><img src="img/logoIcons/search1.png" alt="search"></button>
-					</form>
-				</div>
+	<nav class="navbar navbar-expand-lg fixed-top navbar-dark bg-dark" aria-label="Main navigation">
+		<div class="container-fluid">
+			<a class="navbar-brand" href="index.html"><img src="img/logoIcons/logo2.png" alt="logo"></a>
+			<button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><img src="img/logoIcons/user4.png" alt="user"></a>
+						<ul class="dropdown-menu">
+							<li><a class="dropdown-item" href="cadastro.html">Cadastre-se</a></li>
+							<li><a class="dropdown-item" href="login.html">login</a></li>
+						</ul>
+					</li>
+					<li class="nav-item"><a class="nav-link" aria-current="page" href="news.html">News</a></li>
+					<li class="nav-item"><a class="nav-link" aria-current="page" href="listas.html">Listas</a></li>
+					<li class="nav-item"><a class="nav-link" aria-current="page" href="reviews.html">Reviews</a></li>
+					<li class="nav-item"><a class="nav-link" aria-current="page" href="esports.html">eSports</a></li>
+				</ul>
 			</div>
-		</nav>
-	</section><br>
-	<!-- fim da area de navegação-->
+		</div>
+	</nav><br><br><br><br>
+<!-- fim da area de navegação-->
 
 
 	<!--Cadastro-->
@@ -51,7 +44,7 @@
 			<div class="row justify-content-md-center h-100">
 				<div class="card-wrapper">
 					<div class="brand">
-						<img src="img/logoIcons/logoIcon2.png" alt="logo">
+						<img src="img/logoIcons/user3.png" alt="logo">
 					</div>
 					<div class="card fat">
 						<div class="card-body">
@@ -72,9 +65,9 @@
 										</a>
 									</label>
 									<input id="password" type="password" class="form-control" name="password" required data-eye>
-								    <div class="invalid-feedback">
-								    	Senha obrigatória
-							    	</div>
+									<div class="invalid-feedback">
+										Senha obrigatória
+									</div>
 								</div>
 
 								<div class="form-group">
@@ -88,7 +81,7 @@
 									<button type="submit" class="btn btn-primary btn-block" onclick="logar()"> Entrar</button>
 								</div>
 								<div class="mt-4 text-center">
-									Não tem conta? <a href="register.html" >Cadastrar</a>
+									Não tem conta? <a href="cadastro.html">Cadastrar</a>
 								</div>
 							</form>
 						</div>
@@ -97,18 +90,19 @@
 			</div>
 		</div>
 	</section>
-	<!--Fim-->
+<!--Fim cadastro-->
 
-	<!--footer-->
-    <section class="footer">
-        <footer class="text-muted py-5">
-            <div class="container">
-                <h2 class="float-end"><a href="sobrenos.html">Sobre nós</a></p></h2>
-                <h2 class="mb-0"><img src="img/logoIcons/logo2.png" alt="logo"> &copy;</h2><br>
-                <p>Game Street é um site que reune as melhores noticias do mundo geek. Criado por um grupo de universitarios , que cursam Análise e Desenvolvimento de Sistemas , o projeto cresceu e hoje é a maior plataforma de noticias do mundo geek do Brasil. 
-            </div>
-        </footer>
-    </section>
+<!--footer-->
+	<section class="footer">
+		<img src="img/fundopaginas/fundo.png" alt="fundo" class="img-fundo">
+		<footer class="text-muted py-5">
+			<div class="container">
+				<h2 class="mb-0"><img src="img/logoIcons/logo2.png" alt="logo"> &copy;</h2><br>
+				<p>Game Street é um site que reune as melhores noticias do mundo geek. Criado por um grupo de universitarios , que cursam Análise e Desenvolvimento de Sistemas , o projeto cresceu e hoje é a maior plataforma de noticias do mundo geek do Brasil. 
+				<h2 class="float-end"><a href="sobrenos.html">Sobre nós</a></p></h2>
+			</div>
+		</footer>
+	</section>
 <!--fim do footer-->
 
 	<script src="js/cadastro.js"></script>
@@ -117,7 +111,6 @@
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="js/navbar_responsive.js"></script>
-    <script src="js/relogio.js"></script>
 <!--#################-->
 
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
