@@ -16,6 +16,8 @@
 	<!--link botstrap-->
 	<link href="css/style.css" rel="stylesheet">
 	<!--JavaScript-->
+	<script src="js/cadastro.js"></script>
+	
 </head>
 <body style="background-color: #0e6cc4;">
 <!--inicio do backgroud waves-->
@@ -73,25 +75,25 @@
 										<div class="center-wrap">
 											<div class="section text-center">
 												
-												<h4 class="mb-4 pb-3">criar conta</h4>
+												<h4 class="mb-4 pb-3">Criar Conta</h4>
 												
 												<div class="form-group">
-													<input type="text" name="logname" class="form-style" placeholder="nome completo" id="logname" autocomplete="off">
+													<input type="text" name="logname" class="form-style" placeholder="nome completo" id="logname" autocomplete="off" required>
 													<i class="input-icon uil uil-user"></i>
 												</div>	
 												<div class="form-group mt-2">
-													<input type="email" name="logemail" class="form-style" placeholder="digite seu email" id="logemail" autocomplete="off">
+													<input type="email" name="criaremail" class="form-style" placeholder="digite seu email" id="criaremail" autocomplete="off" required>
 													<i class="input-icon uil uil-at"></i>
 												</div>
 												<div class="form-group mt-2">
-													<input type="password" name="logpass" class="form-style" placeholder="crie uma senha" id="logpass" autocomplete="off">
+													<input type="password" name="criarpass" class="form-style" placeholder="crie uma senha" id="criarpass" autocomplete="off" required>
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
 												<div class="form-group mt-2">
-													<input type="password" name="logpass" class="form-style" placeholder="confirme sua senha" id="logpass" autocomplete="off">
+													<input type="password" name="repetirpass" class="form-style" placeholder="confirme sua senha" id="repetirpass" autocomplete="off" required>
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
-												<a href="#" class="btn mt-4">cadastrar</a>
+												<a href="#" class="btn mt-4" onclick="cadastrar">cadastrar</a>
 											</div>
 										</div>
 									</div>
@@ -101,15 +103,15 @@
 												<img src="img/logoIcons/logoIcon3.png" alt="logo">
 												<h4 class="mb-4 pb-3">Entrar</h4>
 												<div class="form-group">
-													<input type="email" name="logemail" class="form-style" placeholder="digite seu e-mail" id="logemail" autocomplete="off">
+													<input type="email" name="logemail" class="form-style" placeholder="digite seu e-mail" id="logemail" autocomplete="off" required>
 													<i class="input-icon uil uil-at"></i>
 												</div>	
 												<div class="form-group mt-2">
-													<input type="password" name="logpass" class="form-style" placeholder="digite sue senha" id="logpass" autocomplete="off">
+													<input type="password" name="logpass" class="form-style" placeholder="digite sue senha" id="logpass" autocomplete="off" required>
 													<i class="input-icon uil uil-lock-alt"></i>
 												</div>
-												<a href="index.html" class="btn mt-4">entrar</a>
-												<p class="mb-0 mt-4 text-center"><a href="#0" class="link">esqueceu a senha?</a><br></p>
+												<a href="#" class="btn mt-4" onclick="logar()">entrar</a>
+												<p class="mb-0 mt-4 text-center"><a href="#" class="link">esqueceu a senha?</a><br></p>
 											</div>
 										</div>
 									</div>
@@ -134,7 +136,9 @@
 		</footer>
 	</section>
 <!--fim do footer-->
+<!--Validação-->
 
+<!--Fim da validação-->
 <!--scripts Bootstrap-->
 	<script src="js/navbar_responsive.js"></script>
 	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
