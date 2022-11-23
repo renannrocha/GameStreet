@@ -1,6 +1,4 @@
-# Site de Noticias
-
-##
+# Site de Noticias - GameStreet
 
 tecnologias utilizadas: 
 
