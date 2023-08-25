@@ -5,7 +5,7 @@
 </div>
 
 <hr>
-
+<h2> 🔍Sobre o projeto  </h2>
 <p>O Game Street foi um projeto de faculdade onde curso Analise e Desenvolvimento de Sistemas. E teve a colaboração de 3 amigos meus, Gercyano, Leo e Carlos, que estiveram presente no processo de desenvolvimento desse site.</p>
 <p>A ideia do projeto era a criação de um site de noticias simples que traria um estilo focado apenas para um nicho especifico, que era sobre jogos eletrônicos. Em geral o projeto se saiu bem até, e recebendo bastantes elogios e uma nota considerável,  já que era a nossa primeira vez desenvolvendo algo real e apresentando aquele projeto.</p>
 <p>Minha maior área de atuação nesse projeto , foi na parte de estruturação do site, layout das paginas trabalhando com HTML e CSS e Bootstrap, planejamento de navegação e estruturação de conteúdo da pagina onde trabalhei em conjunto do meu amigo Gercyano.</p>
