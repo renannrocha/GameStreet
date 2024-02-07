@@ -1,5 +1,7 @@
 <div align="center">
-    <img width="40%" src="img\logoIcons\logo1.png" alt="logo"><br>
+    <img width="60%" src="img\logoIcons\logo1.png" alt="logo"><br><br>
+</div>
+<div align="center">
     <img height="22px" width="80px" src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white" alt="html">
     <img height="22px" width="80px" src="https://img.shields.io/badge/CSS-239120?&style=for-the-badge&logo=css3&logoColor=white" alt="css">
     <img height="22px" width="80px" src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" alt="javascript">
@@ -59,7 +61,7 @@ code .
 ```
 
 ## 📝 Requirements
-- Using the <img height="20px" src="https://img.shields.io/badge/Visual_Studio_Code-0078D4?style=for-the-badge&logo=visual%20studio%20code&logoColor=white">
+- Using the visual studio code IDE
 
 - Install the Live Server extension in Visual Studio Code:
 <div align="center">
