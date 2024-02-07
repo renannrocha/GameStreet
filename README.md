@@ -55,13 +55,16 @@ cd GameStreet/
 code .
 ```
 
-# Requisitos
-
-> [!IMPORTANT]
+# Recomendações
 > utilização da IDE Visual Studio Code
 
-> [!IMPORTANT]
 > Instalar a extensão Live Server no Visual Studio Code:
 <div align="center">
     <img width=100% src="\img\projeto\live_server.png" alt="live-server">
 </div>
+
+# Uso
+Com o projeto aberto no Visual Studio Code e com a extensão instalada:
+
+1. No visual studio code procure o arquivo `index.html` na pasta `src`
+1. <p>Clique no botão <img src="\img\projeto\golive.png"> para iniciar a aplicação no navegador<p>
