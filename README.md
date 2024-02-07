@@ -6,65 +6,64 @@
 
 <hr>
 
-# Imagens do Projeto
+# 📸 Screenshots
 
-> **home page**
+> **Home page**
 <div align="center">
     <img width=100% src="\img\projeto\home.png" alt="home page">
 </div>
 
 <br>
 
-> **Page News**
+> **Page news**
 <div align="center">
     <img width=100% src="\img\projeto\page_news.png" alt="home page">
 </div>
 
 <br>
 
-> **User Login**
+> **Login page**
 <div align="center">
     <img width=100% src="\img\projeto\page_login.png" alt="home page">
 </div>
 
 <br>
 
-> **User Registration**
+> **Registration page**
 <div align="center">
     <img width=100% src="\img\projeto\page_cadastro.png" alt="home page">
 </div>
 
-# Sobre o projeto
+# 📖 About the project
 
-O Game Street foi meu primeiro projeto de faculdade de Analise e Desenvolvimento de Sistemas onde a ideia era a criação de um site de noticias simples que traria um estilo focado apenas para um nicho especifico, que era sobre noticias sobre jogos eletronicos sendo reviews, lançamentos, E-sports.
+Game Street was my first project in college in Systems Analysis and Development where the idea was to create a simple news site that would bring a style focused only to a specific niche, which was about news about electronic games being reviews, releases, E-sports.
 
-# Instalação
-
-1° faça o clone do repositorio para sua maquina:
+# 🛠️ Config
+Make the clone of the repository for your machine:
 ```
 git clone https://github.com/renannrocha/GameStreet.git
 ```
 
-2° abra a pasta do projeto no git bash:
+Open the project folder in git bash:
 ```
 cd GameStreet/
 ```
 
-3° utilize o comando para abrir o Visual Studio Code no projeto GameStreet:
+Use the command to open Visual Studio Code in the GameStreet project:
 ```
 code .
 ```
 
-# Recomendações
-> utilização da IDE Visual Studio Code
+# 📝 Requirements
+- Using the Visual Studio Code IDE
 
-> Instalar a extensão Live Server no Visual Studio Code:
+- Install the Live Server extension in Visual Studio Code:
 <div align="center">
     <img width=100% src="\img\projeto\live_server.png" alt="live-server">
 </div>
 
-# Uso
-Com o projeto aberto no Visual Studio Code e com a extensão instalada:
+# 👩🏻‍💻 Use
+With the project open in Visual Studio Code and with the extension installed:
 
-1. No visual studio code procure o arquivo `index.html` na pasta `src`
-1. <p>Clique no botão <img src="\img\projeto\golive.png"> para iniciar a aplicação no navegador<p>
+1. In visual studio code look for the file `index.html` in the `src` folder.
+1. <p>Click the <img src="\img\projeto\golive.png"> button to launch the application in the browser.<p>
