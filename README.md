@@ -77,3 +77,20 @@ With the project open in Visual Studio Code and with the extension installed:
 ## 🫱🏻‍🫲🏻 Contributing
 > [!NOTE]
 > I am currently no longer working on this project. I plan to make a second version of it in the future using a more planned and architected architecture, applying new concepts that I have learned in these last years. Stay On!
+
+## 🫡 Credits
+
+This project would not be possible without the dedication and hard work of our team. We would like to give special thanks to:
+- [@GercyanoAlves](https://github.com/GercyanoAlves)
+- [@CarlosDev2911](https://github.com/CarlosDev2911)
+- [@gomesleonardo](https://github.com/gomesleonardo)
+
+Each of them played a crucial role in the development of this project. We appreciate their contribution.
+
+## ✉️ Contact
+
+If you have any questions or would like to discuss the project further, feel free to reach out:
+
+Email: [renanrocha8897@gmail.com](renanrocha8897@gmail.com)
+
+LinkedIn: [Renan Rocha](www.linkedin.com/in/renannrocha)
